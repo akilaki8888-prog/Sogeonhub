@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sigeon AI</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffd83d;
+    height: 100vh;
+}
+
+/* LOGIN */
+#login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 35px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px #0003;
+}
+
+.login-box h1 {
+    margin-bottom: 10px;
+}
+
+.login-box p {
+    margin-bottom: 25px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    margin: 7px 0;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.google {
+    background: #4285f4;
+    color: white;
+}
+
+.apple {
+    background: black;
+    color: white;
+}
+
+/* APP */
+#app {
+    display: none;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background: #171717;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    height: 100%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.new-chat,
+.settings {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #292929;
+    color: white;
+    cursor: pointer;
+}
+
+.main {
+    margin-left: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar {
+    height: 60px;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.chat {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.message {
+    max-width: 700px;
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 15px;
+}
+
+.user {
+    background: white;
+}
